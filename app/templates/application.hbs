@@ -1,3 +1,25 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="wrap found-film">
+	<div class="container">
+		<div class="row found-film__row">
+			<div class="col-md-12">
+				{{#link-to 'index' class="found-film__logo-link"}}<h2 id="title" class="found-film__logo">Ищу фильм</h2>{{/link-to}}
+			</div>
+		</div>
+	</div>
+</div>
+<div class="wrap search">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<form class="form-inline" role="search">
+					<div class="form-group">
+					  {{input value=keywords class='form-control search__input' placeholder="Введите запрос"}}
+					</div>
+					<button class="btn btn-primary search__button" {{action 'search' keywords}}>Искать</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
 
 {{outlet}}

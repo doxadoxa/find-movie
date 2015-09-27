@@ -1,0 +1,119 @@
+@import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+html {
+	color: #f00;
+}
+
+.row {
+	margin-top: $line-height-computed;
+	margin-bottom: $line-height-computed;
+}
+
+.found-film {
+	background-image: linear-gradient( to bottom, #eee 0%, #fff 100%);
+
+	.found-film__row {
+		@extend .text-center;
+	}
+
+	.found-film__logo {
+		color: $gray-base;
+	}
+
+	.found-film__logo-link {
+		border-bottom: 1px dashed rgba($gray-base,0.1);
+		display: inline-block;
+
+		&:hover {
+			text-decoration: none;
+			border-bottom-color: rgba($gray-base, 0.8);
+		}
+	}
+}
+
+.search {
+	@extend .text-center;
+	margin-bottom: $line-height-computed*3;
+
+	.search__input {
+		width: 400px;
+		padding: 20px;
+		border-radius: 0px;
+	}
+
+	.search__button {
+		background-color: $brand-danger;
+		padding: 11px;
+		border-radius: 0px;
+		font-weight: bold;
+		border: none;
+		background-image: linear-gradient( to top, darken($brand-danger,10%) 0%, $brand-danger 100%);
+
+		&:hover {
+			background-image: linear-gradient( to top, darken($brand-danger,0%) 0%, lighten( $brand-danger, 3%) 100%);
+		}
+	}
+}
+
+.movies {
+	.movies__item {
+		@extend .col-md-4;
+		margin-bottom: 20px;
+	}
+
+	.movies__item-inner {
+		z-index: 10;
+		background-size: cover;
+		transition: all .5s;
+		position: relative;
+
+		&:hover {
+			transform: translate(0px,-5px);
+			box-shadow: 2px 2px 4px 0px rgba(#000,0.5);
+
+		}
+	}
+
+	.movies__item-info {
+		margin-right: 0;
+		margin-left: 0;
+		padding-left: 0;
+		li {
+			display: inline-block;
+			margin-right: 20px;
+		}
+	}
+
+	.movies__item-adding {
+		position: absolute;
+		top: 0px;
+		height: 70px;
+		width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 20px;
+		background-image: linear-gradient( to bottom, rgba(#000, 0.6) 0%, rgba(#000, 0) 100%);
+		z-index: 22;
+		color: #fff;
+	}
+
+	.movies__item-description {
+		height: 100px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 20px;
+		background-image: linear-gradient( to top, rgba(#000, 1) 0%, rgba(#000, 0) 100%);
+	}
+
+	.movies__item-link {
+		display: block;
+		width: 100%;
+		padding-top: 300px;
+		color: #fff;
+		text-shadow: 1px 1px 1px rgba(#000,0.5);
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
