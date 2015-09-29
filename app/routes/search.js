@@ -44,13 +44,5 @@ export default Ember.Route.extend({
 	setupController : function( controller, model ) {
 		this._super.apply(this,arguments);
 		controller.set('total_pages', this.store.metadataFor('search').total_pages );
-		/*if ( this.store.metadataFor('search').total_pages > 1 ) {
-			var isLoadingStart = false;
-			Ember.$(window).on('scroll', function() {
-				if ( !isLoadingStart && $(".load-more-btn").length > 0 && ( $(window).scrollTop() + $(window).height() > $(".load-more-btn").offset().top ) ) {
-					controller.set('loadingMore', true);
-				}
-			})
-		}*/
 	}
 });

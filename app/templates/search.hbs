@@ -39,17 +39,17 @@
 		{{#each model.search as |movie|}}
 				<div class="movies__item {{genre-class movie.genre_ids}}">
 					
-					<div class="movies__item-inner" style="background-image: url(http://image.tmdb.org/t/p/w500{{movie.poster_path}})">
+					<div class="movies__item-inner" style="{{poster-bg movie.poster_path}}">
 						<div class="movies__item-adding">
+						{{#if movie.release_date}}
 							<ul class="movies__item-info">
 								<li>{{release-year movie.release_date}}</li>
 							</ul>
+						{{/if}}
 						</div>
 						{{#link-to 'movie' movie.id class="movies__item-link"}}
 							<div class="movies__item-description">
-								
-									<h3>{{movie.title}}</h3>
-								
+								<h3>{{movie.title}}</h3>	
 							</div>
 						{{/link-to}}
 					</div>

@@ -28,30 +28,40 @@
 					<dl>
 						<dt>Релиз:</dt>
 						<dd>{{format-date model.release_date}}</dd>
-
-						<dt>Жанры:</dt>
-						<dd class="comma-list">
-							{{#each model.genres as |genre|}}
-								<span>{{genre.name}}</span>
-							{{/each}}
-						</dd>
-
-						<dt>IMDB</dt>
-						<dd><a href="http://www.imdb.com/title/{{model.imdb_id}}/" target="_blank">Перейти</a></dd>
+					
+						{{#if model.genres}}
+							<dt>Жанры:</dt>
+							<dd class="comma-list">
+								{{#each model.genres as |genre|}}
+									<span>{{genre.name}}</span>
+								{{/each}}
+							</dd>
+						{{/if}}
+						
+						{{#if model.imdb_id}}
+							<dt>IMDB</dt>
+							<dd><a href="http://www.imdb.com/title/{{model.imdb_id}}/" target="_blank">Перейти</a></dd>
+						{{/if}}
 					</dl>
 					<dl>
-						<dt>Оригинальное название</dt>
-						<dd>{{model.original_title}}</dd>
-
-						<dt>Язык оригинала:</dt>
-						<dd>{{model.original_language}}</dd>
-
-						<dt>Страны:</dt>
-						<dd class="comma-list">
-							{{#each model.production_countries as |country|}}
-								<span>{{country.name}}</span>
-							{{/each}}
-						</dd>
+						{{#if model.original_title}}
+							<dt>Оригинальное название</dt>
+							<dd>{{model.original_title}}</dd>
+						{{/if}}
+						
+						{{#if model.original_language}}
+							<dt>Язык оригинала:</dt>
+							<dd>{{model.original_language}}</dd>
+						{{/if}}
+						
+						{{#if model.production_countries}}
+							<dt>Страны:</dt>
+							<dd class="comma-list">
+								{{#each model.production_countries as |country|}}
+									<span>{{country.name}}</span>
+								{{/each}}
+							</dd>
+						{{/if}}
 					</dl>									
 				</div>
 				{{#if model.overview}}
