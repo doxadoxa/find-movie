@@ -24,7 +24,7 @@ html {
 		border-bottom: 1px dashed rgba($gray-base,0.1);
 		display: inline-block;
 
-		&:hover {
+		&:hover, &:focus, &:active {
 			text-decoration: none;
 			border-bottom-color: rgba($gray-base, 0.8);
 		}
@@ -81,6 +81,9 @@ html {
 		li {
 			display: inline-block;
 			margin-right: 20px;
+			font-size: 18px;
+			font-weight: bold;
+			text-shadow: 1px 1px 0px rgba(#000,0.5);
 		}
 	}
 
@@ -114,6 +117,96 @@ html {
 
 		&:hover {
 			text-decoration: none;
+		}
+	}
+}
+
+.load-more-btn {
+	display: block;
+	width: 100%;
+	clear: both;
+	text-align: center;
+	background-color: #eee;
+	color: $gray-base;
+	border-radius: 0px;
+}
+
+@keyframes spinning {
+  from {
+	transform: rotate(0deg);
+  }
+
+  to {
+  	transform: rotate(360deg);
+  }
+}
+
+.loader {
+	.loader__icon {
+		font-size: 30px;
+		animation: spinning 1s infinite;
+	}
+}
+
+.filters {
+	text-align: center;
+
+	.filters__link {
+		color: $brand-danger;
+		border-bottom: 1px dashed rgba($brand-danger, 0.2);
+
+		&:hover, &:focus, &:active {
+			text-decoration: none;
+			border-bottom-color: $brand-danger;
+		}
+	}
+	.filters__body {
+		background-color: #eee;
+		display: none;
+		padding: 20px;
+	}
+}
+
+.movie-full {
+	.movie-full__rating {
+		text-align: right;
+		font-size: 40px;
+		font-weight: bold;
+		margin-top: 10px;
+		display: block;
+	}
+
+	.movie-full__info {
+		background-color: #eee;
+		padding: 25px;
+
+		&:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		dl {
+			width: 50%;
+			float: left;
+		}
+
+		dd {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.comma-list {
+	span {
+		&:after {
+			content: ',';
+		}
+
+		&:last-child {
+			&:after {
+				content: '';
+			}
 		}
 	}
 }

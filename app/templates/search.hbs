@@ -1,13 +1,48 @@
-<div class="container movies">
+<div class="container filters">
 	<div class="row">
-		{{#each model as |movie|}}
-				<div class="movies__item">
+		<div class="col-md-12">
+			<a href="#" class="filters__link" {{action "showFilters"}}>
+			<i class="glyphicon glyphicon-filter"></i>
+			Показать фильтры</a>
+		</div>
+	</div>
+	<div class="row filters__body">
+		<div class="col-md-3">
+			<label for="genres">Жанры:</label>
+			{{view "select" 
+				content=model.genre 
+				optionValuePath="content.id"
+       			optionLabelPath="content.name"
+       			prompt="Выберите жанр"
+       			selection=selectedGenre
+				actions="selectGenre"
+				value=genre
+       		}}
+		</div>
+		<div class="col-md-3">
+				{{#link-to 'search' (query-params genre="null") class="filters__link"}}
+					<i class="glyphicon glyphicon-remove"></i> Сбросить фильтры
+				{{/link-to}}
+		</div>
+	</div>
+</div>
+
+<div class="container movies">
+	{{#if model.search}}
+		<div class="row">
+			<div class="col-md-12">
+				По запросу <b>{{query}}</b> найдены фильмы:
+			</div>
+		</div>
+	{{/if}}
+	<div class="row">
+		{{#each model.search as |movie|}}
+				<div class="movies__item {{genre-class movie.genre_ids}}">
+					
 					<div class="movies__item-inner" style="background-image: url(http://image.tmdb.org/t/p/w500{{movie.poster_path}})">
 						<div class="movies__item-adding">
 							<ul class="movies__item-info">
-								<li>{{movie.genre_ids.name}}</li>
 								<li>{{release-year movie.release_date}}</li>
-								<li>Россия</li>
 							</ul>
 						</div>
 						{{#link-to 'movie' movie.id class="movies__item-link"}}
@@ -19,8 +54,22 @@
 						{{/link-to}}
 					</div>
 				</div>
+		{{else}}
+			<div class="col-md-12 text-center">
+				Ни одного фильма по вашему запросу найдено не было :(
+			</div>
 		{{/each}}
-		{{outlet}}
+		{{#if hasMore}}
+		  <button type="button" class="btn btn-lg load-more-btn" {{bind-attr disabled=loadingMore}} {{action "loadMore"}}>
+		    {{#if loadingMore}}
+		      	<div class="loader">
+					<i class="glyphicon glyphicon-refresh loader__icon"></i>
+				</div>
+		    {{else}}
+		      Показать еще
+		    {{/if}}
+		  </button>
+		{{/if}}
 	</div>
 </div>
 

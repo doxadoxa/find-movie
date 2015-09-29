@@ -1,3 +1,3 @@
-export default Ember.Handlebars.registerBoundHelper('release-year', function( releaseDate ) {
+export default Ember.Helper.helper(function( releaseDate ) {
   return new Date( Date.parse(releaseDate) ).getFullYear();
 });

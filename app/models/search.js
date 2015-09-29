@@ -6,5 +6,5 @@ export default DS.Model.extend({
 	poster_path : DS.attr("string"),
 	original_title : DS.attr("string"),
 	overview : DS.attr("string"),
-	//genre_ids : DS.hasMany("genre", { async: true })
+	genre_ids : DS.attr()
 });

@@ -11,20 +11,46 @@ export default Ember.Route.extend({
 			refreshModel : true,
 			replace : false,
 			as : 'page'
+		},
+		genre : {
+			refreshModel : true,
+			replace : true,
+			as : 'genre'
 		}
 	},
 	model: function( params ) {
-		
-		return this.store.query('search', {'query' : params.query, 'page' : params.page});
-		//return this.store.query('movie', {'query' : params.query});
+		var search = this.store.query('search', {'query' : params.query, 'page' : params.page}).then(function( searches ){
+			var filtered = Ember.A();
+
+			if ( params.genre ) {		
+				 searches.forEach(function(e,i) {
+					if ( e.get('genre_ids').indexOf( parseInt( params.genre ) ) != -1 ) {
+						filtered.pushObject(e);
+					}
+				})
+			} else {
+				filtered = searches;
+			}
+			
+			return filtered;
+		})
+		var data =  Ember.RSVP.hash({
+			search : search,
+		 	genre : this.store.findAll('genre')
+		});
+
+		return data;
 	}, 
-	loading : function() {
-		displayLoadingSpinner();
-		return true;
-	},
-	actions : {
-		loadNext : function( params ) {
-			return this.store.query('search', {'query' : params.query, 'page' : params.page});
+	setupController : function( controller, model ) {
+		this._super.apply(this,arguments);
+		controller.set('total_pages', this.store.metadataFor('search').total_pages );
+		if ( this.store.metadataFor('search').total_pages > 1 ) {
+			var isLoadingStart = false;
+			Ember.$(window).on('scroll', function() {
+				if ( !isLoadingStart && $(".load-more-btn").length > 0 && ( $(window).scrollTop() + $(window).height() > $(".load-more-btn").offset().top ) ) {
+					controller.set('loadingMore', true);
+				}
+			})
 		}
 	}
 });

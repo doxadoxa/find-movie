@@ -1,54 +1,38 @@
 import DS from 'ember-data';
 import Ember from 'ember';
-import Genre from 'find-movie/models/genre';
 
-export default DS.Adapter.extend({
-	genreData : null,
-	loadData : function( callback ) {
-		if( this.genreData == null ) {
-			Ember.$.get(
-					'http://api.themoviedb.org/3/genre/movie/list', 
-					{
-						api_key : "281ba0bb74e6fe002b3d3e5687f51e5a",
-						language : "ru"
-					},
-					function( result ) {
-						var genres = {};
-
-						for( var i = 0; i < result['genres'].length; ++i ) {
-							genres[ result['genres'][i]['id'] ] = result['genres'][i];
-						}
-
-						this.genreData = genres;
-						//console.log( genres );
-						return callback( this.genreData );
-					}
-				)
+export default DS.RESTAdapter.extend({
+	host : "http://api.themoviedb.org",
+	namespace : '3',
+	pathForType: function(type) {
+		return type + '/movie/list';
+	},
+	ajaxOptions: function(url, type, hash) {
+		var key = 
+		"281ba0bb74e6fe002b3d3e5687f51e5a";
+		var lang = "ru";
+		if ( hash === undefined ) {
+			hash = {data: {api_key: key, language : lang}};
 		} else {
-			return callback( this.genreData );
-		}
-	},
-	findRecord : function( store, type, id, snapshot ) {
-		return this.loadData(function( genres ){
-			id = id.split(',')[0];
+			if(hash.data) {
+                hash.data.api_key = key;
+                hash.data.language = lang;
+            } else {
+                hash.data = {api_key: key, language: lang};
+            }
 
-			var genre = { "genre" : genres[id] };
-			return genre;
-		})
+
+            if ( hash.data.id !== undefined ) {
+            	url = url + "/" + hash.data.id;
+            	hash.data.id = null;
+            }
+		}
+
+
+		
+		return this._super(url, type, hash);
 	},
-	createRecord : function() {
-		return false;
-	},
-	updateRecord : function() {
-		return false;
-	},
-	deleteRecord : function() {
-		return false;
-	},
-	findAll : function() {
-		return false;
-	},
-	query : function() {
-		return false;
-	}
-})
+/*	findAll: function(store, type, sinceToken) {
+		return this._super(store,type,sinceToken);
+	}*/
+});

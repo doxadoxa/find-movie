@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row found-film__row">
 			<div class="col-md-12">
-				{{#link-to 'index' class="found-film__logo-link"}}<h2 id="title" class="found-film__logo">Ищу фильм</h2>{{/link-to}}
+				{{#link-to 'index' class="found-film__logo-link"}}<h2 id="title" class="found-film__logo"> <i class="glyphicon glyphicon-film"></i> Ищу фильм</h2>{{/link-to}}
 			</div>
 		</div>
 	</div>
@@ -13,9 +13,9 @@
 			<div class="col-md-12">
 				<form class="form-inline" role="search">
 					<div class="form-group">
-					  {{input value=keywords class='form-control search__input' placeholder="Введите запрос"}}
+					  {{input value=query class='form-control search__input' placeholder="Введите название фильма" required="true"}}
 					</div>
-					<button class="btn btn-primary search__button" {{action 'search' keywords}}>Искать</button>
+					<button class="btn btn-primary search__button" {{action 'search' query}}> <i class="glyphicon glyphicon-search"></i>  Искать</button>
 				</form>
 			</div>
 		</div>
