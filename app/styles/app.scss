@@ -33,10 +33,13 @@ html {
 
 .search {
 	@extend .text-center;
-	//margin-bottom: $line-height-computed;
+	
+	.search__form-group {
+		width: 40%;
+	}
 
 	.search__input {
-		width: 400px;
+		width: 100%;
 		padding: 20px;
 		border-radius: 0px;
 	}
