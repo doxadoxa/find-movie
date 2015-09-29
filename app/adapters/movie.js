@@ -2,16 +2,14 @@ import DS from 'ember-data';
 import Ember from 'ember';
 
 export default DS.RESTAdapter.extend({
-	//281ba0bb74e6fe002b3d3e5687f51e5a
 	host : "http://api.themoviedb.org",
-	namespace : '3',//'3/search',
+	namespace : '3',
 	pathForType: function(type) {
 		return type;
 	},
 	ajaxOptions: function(url, type, hash) {
-		var key = 
-		"281ba0bb74e6fe002b3d3e5687f51e5a";
-		var lang = "ru";
+		var key = window.ENV.apiKey;
+		var lang = window.ENV.apiLang;
 		if ( hash === undefined ) {
 			hash = {data: {api_key: key, language : lang}};
 		} else {

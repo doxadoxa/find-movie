@@ -523,15 +523,31 @@
 			"file": "app/router.js",
 			"settings":
 			{
-				"buffer_size": 233,
+				"buffer_size": 310,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/app.js",
+			"file": "app/controllers/search.js",
 			"settings":
 			{
-				"buffer_size": 420,
+				"buffer_size": 1525,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/routes/search.js",
+			"settings":
+			{
+				"buffer_size": 1378,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/loading.hbs",
+			"settings":
+			{
+				"buffer_size": 199,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,7 +555,104 @@
 			"file": "app/routes/movie.js",
 			"settings":
 			{
-				"buffer_size": 183,
+				"buffer_size": 152,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/environment.js",
+			"settings":
+			{
+				"buffer_size": 1693,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "array(16) { [\"webUserGroupNames\"]=> array(1) { [2]=> string(11) \"payed_users\" } [\"groups\"]=> array(2) { [0]=> string(16) \"Registered Users\" [1]=> string(4) \"Fans\" } [\"webShortname\"]=> string(7) \"test998\" [\"webFullname\"]=> string(7) \"test123\" [\"webEmail\"]=> string(18) \"test123123@test.ru\" [\"webValidated\"]=> int(1) [\"webInternalKey\"]=> string(3) \"599\" [\"webValid\"]=> string(12) \"MjY4MjUwMQ==\" [\"webUser\"]=> string(12) \"dGVzdDk5OA==\" [\"webFailedlogins\"]=> string(1) \"0\" [\"webLastlogin\"]=> string(10) \"1443487369\" [\"webnrlogins\"]=> string(1) \"5\" [\"webDocgroups\"]=> string(0) \"\" [\"modx.session.created.time\"]=> int(1443487416) [\"webUsrConfigSet\"]=> array(0) { } [\"mgrUsrConfigSet\"]=> array(0) { } }\n\narray(16) { [\"webUserGroupNames\"]=> array(1) { [2]=> string(11) \"payed_users\" } [\"groups\"]=> array(2) { [0]=> string(16) \"Registered Users\" [1]=> string(4) \"Fans\" } [\"webShortname\"]=> string(7) \"test998\" [\"webFullname\"]=> string(7) \"test123\" [\"webEmail\"]=> string(18) \"test123123@test.ru\" [\"webValidated\"]=> int(1) [\"webInternalKey\"]=> string(3) \"599\" [\"webValid\"]=> string(12) \"MjY4MjUwMQ==\" [\"webUser\"]=> string(12) \"dGVzdDk5OA==\" [\"webFailedlogins\"]=> string(1) \"0\" [\"webLastlogin\"]=> string(10) \"1443487399\" [\"webnrlogins\"]=> string(1) \"6\" [\"webDocgroups\"]=> array(1) { [0]=> string(1) \"1\" } [\"modx.session.created.time\"]=> int(1443487519) [\"webUsrConfigSet\"]=> array(0) { } [\"mgrUsrConfigSet\"]=> array(0) { } }\n",
+			"settings":
+			{
+				"buffer_size": 1413,
+				"line_ending": "Unix",
+				"name": "array(16) { [\"webUserGroupNames\"]=> array(1) { [2]"
+			}
+		},
+		{
+			"file": "app/styles/app.scss",
+			"settings":
+			{
+				"buffer_size": 3399,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ember-cli-build.js",
+			"settings":
+			{
+				"buffer_size": 1321,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/crossdomain.xml",
+			"settings":
+			{
+				"buffer_size": 579,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/search.hbs",
+			"settings":
+			{
+				"buffer_size": 2058,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "find-movie.sublime-project",
+			"settings":
+			{
+				"buffer_size": 182,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/adapters/movie.js",
+			"settings":
+			{
+				"buffer_size": 850,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/adapters/genre.js",
+			"settings":
+			{
+				"buffer_size": 916,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/genre.hbs",
+			"settings":
+			{
+				"buffer_size": 169,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/adapters/search.js",
+			"settings":
+			{
+				"buffer_size": 713,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/movie.js",
+			"settings":
+			{
+				"buffer_size": 389,
 				"line_ending": "Unix"
 			}
 		},
@@ -547,23 +660,72 @@
 			"file": "app/templates/movie.hbs",
 			"settings":
 			{
-				"buffer_size": 73,
+				"buffer_size": 1733,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/adapters/application.js",
+			"contents": "",
 			"settings":
 			{
-				"buffer_size": 807,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/models/store.js",
+			"file": "app/models/search.js",
 			"settings":
 			{
-				"buffer_size": 210,
+				"buffer_size": 252,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/genre.js",
+			"settings":
+			{
+				"buffer_size": 92,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/routes/genre.js",
+			"settings":
+			{
+				"buffer_size": 131,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/serializers/movie.js",
+			"settings":
+			{
+				"buffer_size": 262,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/serializers/search.js",
+			"settings":
+			{
+				"buffer_size": 512,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/helpers/release-year.js",
+			"settings":
+			{
+				"buffer_size": 125,
+				"line_ending": "Unix",
+				"name": "Ember.Handlebars.registerBoundHelper('currentDate'"
+			}
+		},
+		{
+			"file": "app/helpers/format-date.js",
+			"settings":
+			{
+				"buffer_size": 194,
 				"line_ending": "Unix"
 			}
 		},
@@ -571,7 +733,15 @@
 			"file": "app/templates/application.hbs",
 			"settings":
 			{
-				"buffer_size": 49,
+				"buffer_size": 815,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/application.js",
+			"settings":
+			{
+				"buffer_size": 182,
 				"line_ending": "Unix"
 			}
 		},
@@ -580,6 +750,14 @@
 			"settings":
 			{
 				"buffer_size": 628,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/app.js",
+			"settings":
+			{
+				"buffer_size": 420,
 				"line_ending": "Unix"
 			}
 		},
@@ -670,13 +848,26 @@
 		"/Users/tarasdovgal/Projects/find-movie",
 		"/Users/tarasdovgal/Projects/find-movie/app",
 		"/Users/tarasdovgal/Projects/find-movie/app/adapters",
-		"/Users/tarasdovgal/Projects/find-movie/app/models",
+		"/Users/tarasdovgal/Projects/find-movie/app/controllers",
+		"/Users/tarasdovgal/Projects/find-movie/app/helpers",
 		"/Users/tarasdovgal/Projects/find-movie/app/routes",
+		"/Users/tarasdovgal/Projects/find-movie/app/serializers",
+		"/Users/tarasdovgal/Projects/find-movie/app/styles",
 		"/Users/tarasdovgal/Projects/find-movie/app/templates",
-		"/Users/tarasdovgal/Projects/find-movie/config"
+		"/Users/tarasdovgal/Projects/find-movie/config",
+		"/Users/tarasdovgal/Projects/find-movie/dist"
 	],
 	"file_history":
 	[
+		"/Users/tarasdovgal/Projects/find-movie/app/helpers/join.js",
+		"/Users/tarasdovgal/Projects/find-movie/app/helpers/genre-parse.js",
+		"/Users/tarasdovgal/Projects/find-movie/app/helpers/genre-class.js",
+		"/Users/tarasdovgal/Projects/find-movie/app/adapters/genre.js",
+		"/Users/tarasdovgal/Projects/find-movie/bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss",
+		"/private/var/folders/8d/pdcrw7c17h3674w_8yjkld1m0000gn/T/fz3temp-1/button-custom2.png",
+		"/Users/tarasdovgal/Projects/find-movie/app/routes/search.js",
+		"/Users/tarasdovgal/Projects/find-movie/app/controllers/search.js",
+		"/Users/tarasdovgal/Projects/find-movie/app/models/store.js",
 		"/Users/tarasdovgal/Projects/find-movie/app/models/user.js",
 		"/Users/tarasdovgal/Projects/find-movie/app/templates/users.hbs",
 		"/Users/tarasdovgal/Projects/find-movie/app/routes/users.js",
@@ -795,20 +986,11 @@
 		"/private/var/folders/8d/pdcrw7c17h3674w_8yjkld1m0000gn/T/fz3temp-1/style.css",
 		"/Users/tarasdovgal/Projects/murano-preview/src/templates/blocks/what-we-do-2.jade",
 		"/Users/tarasdovgal/Projects/murano-preview/src/styles/_peppermint.scss",
-		"/private/var/folders/8d/pdcrw7c17h3674w_8yjkld1m0000gn/T/fz3temp-1/style 2.css",
-		"/private/var/folders/8d/pdcrw7c17h3674w_8yjkld1m0000gn/T/fz3temp-1/index 2.html",
-		"/Users/tarasdovgal/Projects/murano-preview/src/lib/jquery.easing.js",
-		"/Users/tarasdovgal/Projects/murano-preview/src/styles/_elements.scss",
-		"/Users/tarasdovgal/Projects/murano-preview/src/styles/_inputs.scss",
-		"/Users/tarasdovgal/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/tarasdovgal/Projects/murano-preview/src/styles/_variables.scss",
-		"/Users/tarasdovgal/Projects/murano-preview/src/templates/index-dump.jade",
-		"/private/var/folders/8d/pdcrw7c17h3674w_8yjkld1m0000gn/T/fz3temp-1/index 3.html",
-		"/Users/tarasdovgal/Projects/murano-preview/src/templates/blocks"
+		"/private/var/folders/8d/pdcrw7c17h3674w_8yjkld1m0000gn/T/fz3temp-1/style 2.css"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -823,6 +1005,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"movie",
 			"question",
 			"benefit",
 			"question",
@@ -949,8 +1132,7 @@
 			"$fa-var",
 			"about us",
 			"contacts-outer",
-			"about-us",
-			"col-lg"
+			"about-us"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1010,7 +1192,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -1019,15 +1201,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 233,
+						"buffer_size": 310,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								202,
-								202
+								281,
+								281
 							]
 						],
 						"settings":
@@ -1043,6 +1225,804 @@
 				},
 				{
 					"buffer": 1,
+					"file": "app/controllers/search.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1525,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1232,
+								1232
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 503.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/routes/search.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1378,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								840,
+								840
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 3.0,
+						"translation.y": 389.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/templates/loading.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 199,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								175,
+								84
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 28,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/routes/movie.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 152,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								92,
+								92
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "config/environment.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1693,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								969,
+								969
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1413,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1014,
+								1028
+							]
+						],
+						"settings":
+						{
+							"auto_name": "array(16) { [\"webUserGroupNames\"]=> array(1) { [2]",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/styles/app.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3399,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3385,
+								3385
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3277.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "ember-cli-build.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1252,
+								1252
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "public/crossdomain.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 579,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								556,
+								556
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/XML/XML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 29,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/templates/search.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2058,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								955,
+								955
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 211.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "find-movie.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								182,
+								182
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "app/adapters/movie.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 850,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								850
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "app/adapters/genre.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 916,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								911,
+								911
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 47.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "app/templates/genre.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								71,
+								71
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "app/adapters/search.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 713,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								518,
+								518
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "app/models/movie.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 389,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								383,
+								383
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "app/templates/movie.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1733,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1393,
+								1393
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 636.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"default_dir": "/Users/tarasdovgal/Projects/find-movie/app/helpers",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "app/models/search.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 252,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								248,
+								248
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "app/models/genre.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 92,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								92,
+								92
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "app/routes/genre.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 131,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								123,
+								123
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "app/serializers/movie.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								194,
+								194
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "app/serializers/search.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 512,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								504,
+								504
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": -0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "app/helpers/release-year.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 125,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								120,
+								63
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Ember.Handlebars.registerBoundHelper('currentDate'",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "app/helpers/format-date.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 194,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								194,
+								194
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "app/templates/application.hbs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 815,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								487,
+								487
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "app/controllers/application.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								175,
+								175
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 628,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								437,
+								437
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 29,
 					"file": "app/app.js",
 					"semi_transient": true,
 					"settings":
@@ -1066,181 +2046,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/routes/movie.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 183,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								85,
-								85
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/templates/movie.hbs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 73,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/adapters/application.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 807,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								31,
-								31
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "app/models/store.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 210,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								136,
-								136
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/templates/application.hbs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 49,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								49,
-								49
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 628,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
+					"buffer": 30,
 					"file": "app/templates/users/show.hbs",
 					"semi_transient": false,
 					"settings":
@@ -1264,7 +2074,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 30,
 					"type": "text"
 				}
 			]

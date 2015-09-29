@@ -1,11 +1,14 @@
 /* jshint node: true */
 
 module.exports = function(environment) {
+  environment = 'production';
   var ENV = {
     modulePrefix: 'find-movie',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
+    apiKey: '281ba0bb74e6fe002b3d3e5687f51e5a',
+    apiLang: "ru",
     contentSecurityPolicy: {
       'default-src': "'none'",
       'script-src': "'self' 'unsafe-inline' 'unsafe-eval' use.typekit.net connect.facebook.net maps.googleapis.com maps.gstatic.com",
